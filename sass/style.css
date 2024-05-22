@@ -1,0 +1,146 @@
+@charset "UTF-8";
+header {
+  background-image: url("../img/banner.png");
+  height: 300px;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+}
+
+nav {
+  background-color: #494d4b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilo para la lista de elementos */
+.menu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Animación para mostrar/ocultar la lista */
+@media screen and (max-width: 768px) {
+  .menu-links {
+    display: none; /* Oculto por defecto en pantallas pequeñas */
+    flex-direction: column;
+    margin-top: 10px; /* Margen superior para la lista */
+  }
+  .menu-linksl.is-active {
+    display: flex; /* Mostrar la lista cuando el menú esté activo */
+    transition: display 0.5s ease; /* Transición para mostrar/ocultar la lista */
+  }
+}
+/* Estilo para cada elemento del menú */
+.link {
+  display: inline-block;
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilo para los enlaces */
+.page {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilo para el botón de menú hamburguesa */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    /* Visible en pantallas pequeñas */
+  }
+}
+.menu-toggle .bar1,
+.menu-toggle .bar2,
+.menu-toggle .bar3 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 150px; /* Reduce height for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #435341;
+}
+
+.intro {
+  padding: 40px;
+}
+
+.intro h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #666;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
+  gap: 20px; /* Agrega espacio entre las columnas */
+}
+
+.contenido > div {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Assuming your genres are within elements with class "genero" */
+.contenido .genero {
+  display: flex; /* Make genre elements act as flex containers */
+  flex-wrap: wrap; /* Allow genres to wrap within columns */
+  justify-content: space-between; /* Distribute genres evenly */
+}
+
+.contenido .genero li { /* Style individual genre list items */
+  list-style: disc; /* Add disc bullets if desired */
+  margin-bottom: 10px; /* Add space between genres */
+}
+
+.contenido h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  font-size: 1em;
+  line-height: 1.5;
+}/*# sourceMappingURL=style.css.map */
