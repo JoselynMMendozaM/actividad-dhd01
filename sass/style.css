@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   background-image: url("../img/banner.png");
   height: 300px;
@@ -16,56 +15,59 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  text-decoration: none;
 }
 
-/* Estilo para la lista de elementos */
-.menu-links {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  text-decoration: none;
+  color: #fff;
 }
 
-/* Animación para mostrar/ocultar la lista */
+li {
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
-  .menu-links {
-    display: none; /* Oculto por defecto en pantallas pequeñas */
+  ul {
+    display: none;
     flex-direction: column;
-    margin-top: 10px; /* Margen superior para la lista */
+    margin-top: 10px;
   }
-  .menu-linksl.is-active {
-    display: flex; /* Mostrar la lista cuando el menú esté activo */
-    transition: display 0.5s ease; /* Transición para mostrar/ocultar la lista */
+  ul.is-active {
+    display: flex;
+    transition: display 0.5s ease;
   }
 }
-/* Estilo para cada elemento del menú */
-.link {
+li {
   display: inline-block;
   margin-right: 20px;
+  text-decoration: none;
 }
+
 @media screen and (max-width: 768px) {
-  .link {
+  li {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
-
-/* Estilo para los enlaces */
 .page {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
-/* Estilo para el botón de menú hamburguesa */
 .menu-toggle {
-  display: none; /* Oculto por defecto */
+  display: none;
   cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
-    /* Visible en pantallas pequeñas */
   }
 }
 .menu-toggle .bar1,
@@ -80,8 +82,8 @@ nav {
 
 @media screen and (max-width: 768px) {
   header {
-    height: 150px; /* Reduce height for smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+    height: 150px;
+    padding: 10px;
   }
 }
 .container {
@@ -113,34 +115,30 @@ h1, h2 {
 
 .contenido {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
-  gap: 20px; /* Agrega espacio entre las columnas */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .contenido > div {
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: 0 2px 5px;
 }
 
-/* Assuming your genres are within elements with class "genero" */
-.contenido .genero {
-  display: flex; /* Make genre elements act as flex containers */
-  flex-wrap: wrap; /* Allow genres to wrap within columns */
-  justify-content: space-between; /* Distribute genres evenly */
+@mixin botones-estilo($color, $ancho) {
+  background-color: $color;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: $ancho;
+
+  .item {
+    font-size: 5em;
+    line-height: 1.5;
+    color: #b32323;
+  }
+  
+  
 }
 
-.contenido .genero li { /* Style individual genre list items */
-  list-style: disc; /* Add disc bullets if desired */
-  margin-bottom: 10px; /* Add space between genres */
-}
-
-.contenido h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.contenido p {
-  font-size: 1em;
-  line-height: 1.5;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
