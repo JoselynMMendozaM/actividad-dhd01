@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIRECTIVAS</title>
     <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/mixin.css">
     <script src="js/menu.js"></script>
 </head>
 <body>
@@ -17,72 +18,101 @@
             <span class="bar2"></span>
             <span class="bar3"></span>
         </div>
-        <ul class="menu-links">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="pg2.directivas.html"> DIRECTIVAS</a></li>
-            <li><a href="pg3-funciones.html">FUNCIONES</a></li>
-            <li><a href="pg4.condicionantes.html">CONDICIONANTES</a></li>
-            <li><a href="pg5-directivas2.html">DIRECTIVAS 2</a></li>
+        <ul class="enlaces">
+            <li class="item"><a href="index.html">INICIO</a></li>
+            <li class="item"><a href="pg2.directivas.html"> DIRECTIVAS</a></li>
+            <li class="item"><a href="pg3-funciones.html">FUNCIONES</a></li>
+            <li class="item"><a href="pg4.condicionantes.html">CONDICIONANTES</a></li>
+            <li class="item"><a href="pg5-directivas2.html">DIRECTIVAS 2</a></li>
         </ul>
     </nav>
     <div>
         <section id="generos">
             <h1>Géneros</h1>
+            <hr>
 
-            <h2 class="item">Novelas</h2>
-            <p>'Don Quijote', de Miguel de Cervantes.</p>
-            <p>'Cien años de Soledad', de Gabriel García Márquez.
-            </p>
-            <p>'Orgullo y prejuicio'.
-            </p>
-            <p>'Guerra y paz', de Leo Tolstoy.
-            </p>
-            <p>'Madame Bovary', de Gustave Flaubert.
-            </p>
-            <p>'Las aventuras de Huckleberry Finn', de Mark Twain.
-            </p>
+            <h2>Novelas</h2>
+            <div id="g-1" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/58/7e/f2/587ef282849a9b81928c8a8d61a3663e.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/d4/33/31/d433312d42c759477b55778910cd3590.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/7d/b9/5b/7db95bb50179f4471924ee5a67f3034d.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/89/98/be/8998bee723c959c0c1d7ff41d95ff1b8.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/3f/9c/b5/3f9cb54e5d157dea1a584e59070a571a.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/20/f9/c0/20f9c0fef3e4a3ec9140afd68ff44626.jpg" alt=""></div>
+            </div>
 
-            <h2 class="item">Cuentos</h2>
-            <p>Caperucita Roja</p>
-            <p>Los tres cerditos</p>
-            <p>Cenicienta</p>
-            <p>El patito feo</p>
-            <p>Pinocho</p>
+            <h2>Cuentos</h2>
+            <div id="g-2" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/94/79/0e/94790e9bdbe8942748179adf2cfa0077.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/c5/b1/69/c5b16920986246ad51bc926301105f97.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/73/01/d5/7301d52e969387d4bae4de7b0231907f.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/cc/eb/6b/cceb6b7113d432a5ed50c2beacca2ee8.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/29/75/6e/29756ecff1426e808e8dd6d9f75a6ae1.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/92/43/5f/92435fe85ff5b315dbca9ba3f41a710f.jpg" alt=""></div>
+            </div>
+ 
 
-            <h2 class="item">Ciencia Ficción</h2>
-            <p>La guerra de los mundos: De H.G. Wells, publicado en 1898</p>
-            <p>Yo, robot: De Isaac Asimov, publicado en 1950</p>
-            <p>Viaje al centro de la Tierra</p>
-            <p>Dune: De Frank Herbert</p>
-            <p>La máquina del tiempo: De H.G. Wells</p>
+            <h2>Ciencia Ficción</h2>
+            <div id="g-3" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/a0/fd/f5/a0fdf5e2ddf4f3b28b9b75b002300093.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/b0/3b/98/b03b9865bf4d6f2332922974e4a59fb6.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/be/72/59/be7259aad653d04f6635e039b4a5b0d7.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/06/43/6e/06436e43d7c359b527f476937d22a0bf.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/04/a8/07/04a807af77ab148eadeb35426f03026a.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/a8/78/b3/a878b34d63e401edac3d2dde3212a4ef.jpg" alt=""></div>
+            </div>
+    
 
-            <h2 class="item">Fantasía</h2>
-            <p>Saga de Crepúsculo de Stephenie Meyer</p>
-            <p>Saga de Harry Potter de J.K. Rowling</p>
-            <p>Canción de hielo y fuego de George R. R. Martin</p>
-            <p>El señor de los anillos de J.R.R. Tolkien</p>
-            <p>Alicia en el país de las maravillas</p>
+            <h2>Fantasía</h2>
+            <div id="g-4" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/e1/31/ce/e131ce653025291f7990d4a717cfac81.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/a5/08/69/a508697dd4d0be6467f7b77b67beb134.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/8f/81/ce/8f81ce13663ae3ea61d09084e8d0f02f.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/22/e3/e4/22e3e4dcc46abab89653a4669e30fa5b.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/a6/eb/3e/a6eb3e21c61f372b3b4d02c9756de8fb.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/cb/f7/53/cbf75326577d08b3c8bdd1daaa0c9b07.jpg" alt=""></div>
+            </div>
 
-            <h2 class="item">Misterio</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
 
-            <h2 class="item">Romance</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <h2>Misterio</h2>
+            <div id="g-5" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/69/a5/43/69a543f3721e54e42472d12bef4cda69.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/19/e7/b2/19e7b21490babaac9fa218d7594f6e90.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/02/b1/37/02b1379a51d258d424142e05de31cfc1.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/1f/2b/cf/1f2bcf946d3df15794e6250c17546313.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/6e/0c/b5/6e0cb5db0be4d99fdd9874a35dcb9434.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/11/47/74/1147746c2b8fd5a6b2994691fc5b9bbb.jpg" alt=""></div>
+            </div>
 
-            <h2 class="item">Thriller</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <h2>Romance</h2>
+            <div id="g-6" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/6d/6f/2f/6d6f2fb3e00e4b080c382be95263594f.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/3b/09/2e/3b092ef6d61881dee65d798d8aeff106.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/22/fd/25/22fd25dddb9acdf6a828ee27f184f250.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/85/26/1f/85261f0b9ea6a4054aa2adc012ac7261.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/db/b2/d3/dbb2d38525893ab31d8f47293bae4c9f.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/736x/04/67/7b/04677b90c0f9f26193224099beccade2.jpg" alt=""></div>
+
+            </div>
+
+            <h2>Thriller</h2>
+            <div id="g-7" class="grid grid-1 md-grid-6">
+                <div><img src="https://i.pinimg.com/564x/ee/d9/27/eed9271f02c23d326f3ab8cbe54c1f66.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/d3/a3/86/d3a3863cbcb95274223684da677f972b.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/69/2a/20/692a2080c6d78137e0d90067151479b1.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/bb/cb/37/bbcb37fec6f18515350973ee93501c6c.jpg" alt=""></div>
+                <div><img src="https://i.pinimg.com/564x/76/b3/35/76b3352fa0d002e32c15bf441811ef87.jpg" alt=""></div>
+                <div> <img src="https://i.pinimg.com/564x/15/84/0b/15840bcba447a0204a26b50ee99079d8.jpg" alt=""></div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="anuncios">
+            <div class="grid grid-1">
+                <div class="anuncio"><img src="img/book.png" alt="" width="80%"></div>
+                <div class="anuncio"><img src="img/book2.png" alt="" width="80%"></div>
+            </div>
+
             
         </section>
     </div>

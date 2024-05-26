@@ -1,0 +1,140 @@
+.grid {
+  display: grid;
+}
+
+div {
+  margin-top: 10px;
+  margin: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-1 {
+  grid-template-columns: repeat(1, 100%);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 50%);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 33.3333333333%);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 25%);
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 20%);
+}
+
+.grid-6 {
+  grid-template-columns: repeat(6, 16.6666666667%);
+}
+
+.grid-7 {
+  grid-template-columns: repeat(7, 14.2857142857%);
+}
+
+.grid-8 {
+  grid-template-columns: repeat(8, 12.5%);
+}
+
+.grid-9 {
+  grid-template-columns: repeat(9, 11.1111111111%);
+}
+
+.grid-10 {
+  grid-template-columns: repeat(10, 10%);
+}
+
+.grid-11 {
+  grid-template-columns: repeat(11, 9.0909090909%);
+}
+
+.grid-12 {
+  grid-template-columns: repeat(12, 8.3333333333%);
+}
+
+@media screen and (min-width: 768px) {
+  .md-grid-1 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .md-grid-2 {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .md-grid-3 {
+    grid-template-columns: repeat(3, 33.3333333333%);
+  }
+  .md-grid-4 {
+    grid-template-columns: repeat(4, 25%);
+  }
+  .md-grid-5 {
+    grid-template-columns: repeat(5, 20%);
+  }
+  .md-grid-6 {
+    grid-template-columns: repeat(6, 16.6666666667%);
+  }
+  .md-grid-7 {
+    grid-template-columns: repeat(7, 14.2857142857%);
+  }
+  .md-grid-8 {
+    grid-template-columns: repeat(8, 12.5%);
+  }
+  .md-grid-9 {
+    grid-template-columns: repeat(9, 11.1111111111%);
+  }
+  .md-grid-10 {
+    grid-template-columns: repeat(10, 10%);
+  }
+  .md-grid-11 {
+    grid-template-columns: repeat(11, 9.0909090909%);
+  }
+  .md-grid-12 {
+    grid-template-columns: repeat(12, 8.3333333333%);
+  }
+}
+#art-1 {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(67, 30, 5, 0.1019607843);
+  filter: drop-shadow(0 0 10px rgba(38, 32, 32, 0.8));
+  border-radius: 40px;
+  padding: 20px;
+}
+
+#generos {
+  width: 95%;
+  padding: 30px;
+  margin: auto;
+}
+#generos img {
+  width: 120px;
+}
+@media screen and (max-width: 768px) {
+  #generos {
+    width: 90%;
+  }
+  #generos img {
+    width: 60%;
+  }
+}
+
+#g-1,
+#g-2,
+#g-3,
+#g-4,
+#g-5,
+#g-6,
+#g-7 {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(67, 30, 5, 0.1019607843);
+  filter: drop-shadow(0 0 10px rgba(38, 32, 32, 0.8));
+  border-radius: 40px;
+}
+
+#anuncios extend .syle-lts {
+  width: 80%;
+}/*# sourceMappingURL=mixin.css.map */

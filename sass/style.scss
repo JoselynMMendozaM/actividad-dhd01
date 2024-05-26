@@ -1,8 +1,10 @@
+//General Style
 //Variables
-$menu: #494d4b;
+$menu: #68472c;
 $pie-de-pg: #312c20;
 $color-letras: #fff;
-$color-title: #435341;
+$color-letras2: #0e3615;
+$color-title: #2d1d02;
 $banner: '../img/banner.png';
 $ancho-menu: 300px;
 $margen-base: 20px;
@@ -15,6 +17,13 @@ $margin-small: 3px;
 $media-breakpoint: 768px;
 $transition-duration: 0.5s;
 $numero-columnas: 2;
+
+body{
+    background-color: #B07133;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23B07133' width='11' height='11'/%3E%3Crect fill='%23b17335' x='10' width='11' height='11'/%3E%3Crect fill='%23b27537' y='10' width='11' height='11'/%3E%3Crect fill='%23b37838' x='20' width='11' height='11'/%3E%3Crect fill='%23b47a3a' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23b57c3c' y='20' width='11' height='11'/%3E%3Crect fill='%23b67e3e' x='30' width='11' height='11'/%3E%3Crect fill='%23b78040' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23b88242' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23b98544' y='30' width='11' height='11'/%3E%3Crect fill='%23ba8746' x='40' width='11' height='11'/%3E%3Crect fill='%23bb8948' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23bc8b4a' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23bd8d4c' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23be8f4e' y='40' width='11' height='11'/%3E%3Crect fill='%23bf9150' x='50' width='11' height='11'/%3E%3Crect fill='%23c09452' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23c19654' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23c29856' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23c39a58' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23c49c5a' y='50' width='11' height='11'/%3E%3Crect fill='%23c59e5d' x='60' width='11' height='11'/%3E%3Crect fill='%23c6a05f' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23c7a361' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23c8a563' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23c9a765' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23caa968' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23cbab6a' x='70' width='11' height='11'/%3E%3Crect fill='%23ccad6c' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23cdaf6f' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23ceb171' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23cfb373' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23d0b676' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23d1b878' x='80' width='11' height='11'/%3E%3Crect fill='%23d2ba7b' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23d3bc7d' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23d4be7f' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23d5c082' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23d6c284' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23d7c487' x='90' width='11' height='11'/%3E%3Crect fill='%23d8c689' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23d9c98c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23dacb8e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23dbcd91' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23dccf93' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ddd196' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23dfd399' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e0d59b' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23e1d79e' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23e2d9a0' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23e3dba3' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23e4dda6' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23e5e0a8' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23e7e2ab' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23e8e4ae' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23e9e6b0' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23eae8b3' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ebeab6' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23edecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
 
 header{
     background-image: url($banner);
@@ -34,45 +43,28 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  text-decoration: none;
+  
+ 
+    
 }
 
-ul {
+.enlaces {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+nav a {
+  color: $color-letras;
   text-decoration: none;
-  color: $color-letras;
+  
 }
-li{
-  color: $color-letras;
-}
-
-@media screen and (max-width: 768px) {
-  ul {
-    display: none; 
-    flex-direction: column;
-    margin-top: 10px; 
-  }
-  ul.is-active {
-    display: flex; 
-    transition: display 0.5s ease; 
-  }
-}
-
-li {
+.item {
   display: inline-block;
   margin-right: 20px;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-  li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
 
 .page {
   text-decoration: none;
@@ -84,13 +76,32 @@ li {
 .menu-toggle {
   display: none; 
   cursor: pointer;
+  user-select: none;
 }
 @media screen and (max-width: 768px) {
+  .enlaces {
+    display: none; 
+    flex-direction: column;
+    margin-top: 10px; 
+  }
+  .enlaces.is-active {
+    display: flex; 
+    transition: display 0.5s ease; 
+  }
+  .item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
   .menu-toggle {
     display: block;
     
   }
+  header {
+    height: 150px; 
+    padding: 10px; 
+  }
 }
+
 .menu-toggle .bar1,
 .menu-toggle .bar2,
 .menu-toggle .bar3 {
@@ -101,66 +112,43 @@ li {
   margin: 3px 0;
 }
 
-  @media screen and (max-width: 768px) {
-    header {
-      height: 150px; 
-      padding: 10px; 
-    }
-  }
+//Page 1
+.container {
+  width: 80%;
+  margin: $margen-base auto;
+  padding: $margen-base;
   
-  .container {
-    width: 80%;
-    margin: $margen-base auto;
-    padding: $margen-base;
-    background-color:$color-letras;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    color: $color-title;
-  }
-  .intro {
-    padding: $margen-base * 2; //
-  }
-  
-  .intro h1 {
-    font-size: 3em;
-    margin-bottom: $margen-base;
-  }
-  
-  .intro p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #666;
-  }
-  .contenido {
-    display: grid;
-    grid-template-columns: repeat($numero-columnas, 1fr);
-    gap: 20px; 
-  }
-  
-  .contenido > div {
-    padding: 20px;
-    background-color:$color-letras;
-    box-shadow: 0 2px 5px ;
-  }
-  
-  
-  @mixin botones-estilo($color, $ancho) {
-    background-color: $color;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    width: $ancho;
+}
 
-    .item {
-      font-size: 5em;
-      line-height: 1.5;
-      color: #b32323;
-    }
-    
-    
-  }
+
+
+h1, h2 {
+  text-align: center;
+  color: $color-title;
+}
+.intro {
+  padding: calc($margen-base * 2); 
+  width: 90%;
+}
+
+.intro h1 {
+  font-size: 3em;
+  margin-bottom: $margen-base;
+}
+
+.intro p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color:$color-letras2;
+}
+
+
+  
+//Page 2
+hr{
+  background-color: $color-letras2;
+  
+}
 
 
   

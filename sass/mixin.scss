@@ -1,0 +1,95 @@
+//General Style
+$columns:12;
+$bg-color: #431e051a;
+
+
+
+
+.grid{
+    display: grid;
+}
+
+div{
+    margin-top: 10px;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+@for $i from 1 to $columns + 1{
+    .grid-#{$i}{
+        grid-template-columns: repeat($i,percentage(calc(1/$i)));
+    }
+}
+
+@media screen and (min-width: 768px) { // Adjust breakpoint as needed
+  
+  @for $i from 1 to $columns + 1{
+    .md-grid-#{$i}{
+        grid-template-columns: repeat($i,percentage(calc(1/$i)));
+    }
+  }
+}
+
+//Page 1 y 2
+@mixin shadow{
+  backdrop-filter: blur(20px);
+  background-color:$bg-color;
+    filter: drop-shadow(
+        0 0 10px rgba(38, 32, 32, 0.8)
+    );
+    border-radius: 40px;
+}
+
+@mixin style-lts {
+  width: 95%;
+  padding: 30px;
+  margin: auto;
+
+  img{
+    width: 120px;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    img{
+      width: 60%;
+       
+    }
+  }
+}
+
+#art-1{
+  @include shadow();
+  padding: 20px;
+}
+
+#generos {
+@include style-lts;
+}
+#g-1,
+#g-2,
+#g-3,
+#g-4,
+#g-5,
+#g-6,
+#g-7 {
+  @include shadow;
+}
+
+#anuncios extend .syle-lts {
+  width: 80%;
+  
+}
+
+//Pages 3
+
+
+
+
+
+
+  
+  
