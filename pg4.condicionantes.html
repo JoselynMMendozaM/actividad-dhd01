@@ -30,20 +30,27 @@
 
     <main>
         <form class="form-registro" >
-            <h1>Crea tu lista de libros</h1>
+            <h1>Crea una reseña
+            </h1>
             <hr>
-            <p>
-                <label for="txt_name">Nombre(s):</label>
-                <input type="text" id="txt_name" name="txt_name" placeholder="Ingrese su Nombre"  style="width: 320px";>
-            </p>
 
             <div class="contenedor-formulario">
-                <label for="cantidadLibros">¿Cuántos libros deseas guardar? (máximo 10):</label>
-                <input type="number" id="cantidadLibros" min="1" max="10">
+
+                <label for="txt_name">Nombre(s):</label>
+                <br>
+                <input type="text" id="txt_name" name="txt_name" placeholder="Ingrese su Nombre">
+                <br>
+
+                <label for="cantidadLibros">Ingrese el nombre del libro:</label>
+                <br>
+                <input type="text" id="txt_name" name="txt_name" placeholder="Ingrese el Nombre del Libro">
+                <br>
+
+                <label for="cantidadLibros">Ecriba aquí su reseña:</label>
+<br>
+                <textarea name="" id=""></textarea>
             
-                <div id="entradasLibros"></div>
-            
-                <button type="button" onclick="generarEntradas()">Generar entradas</button>
+                <button type="button" onclick="enviarReseña()">Enviar Reseña</button>
             </div>
             
            

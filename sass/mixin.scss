@@ -32,6 +32,14 @@ div{
   }
 }
 
+//Pages 5
+$i: 10px;
+
+@while $i < 10{
+	.width-#{$i} { width: 100px - $i; }
+	$i: $i + 1;
+}
+
 //Page 1 y 2
 @mixin shadow{
   backdrop-filter: blur(20px);
@@ -69,6 +77,7 @@ div{
 #generos {
 @include style-lts;
 }
+
 #g-1,
 #g-2,
 #g-3,
@@ -91,44 +100,38 @@ $baseimg: 90%;
 @function typoimg ($size:large){
   @if $size == large{
     @return $baseimg;
-  }
-  @if $size == normal{
+  }@else if $size == normal{
     @return $baseimg - 40%;
-  }
-  @if $size == small{
+  }@else if $size == small{
     @return $baseimg - 65%;
   }
 }
 
+
 @function typo ($size:normal){
   @if $size == large{
-    @return $basetypo * 1.7;
+    @return $basetypo * 4;
   }
   @if $size == normal{
     @return $basetypo;
   }
   @if $size == small{
-    @return $basetypo * 0.9;
+    @return $basetypo - 10px;
   }
 }
 
 @function lighten-or-darken($color, $amount) {
-  // Convertir el color a HSL
   $hue: hue($color);
   $saturation: saturation($color);
   $lightness: lightness($color);
 
-  // Ajustar el brillo del color
   $new-lightness: $lightness + $amount;
 
-  // Asegurarse de que el nuevo brillo esté entre 0% y 100%
   @if $new-lightness > 100% {
     $new-lightness: 100%;
   } @else if $new-lightness < 0% {
     $new-lightness: 0%;
   }
-
-  // Devolver el color ajustado en HSL
   @return hsl($hue, $saturation, $new-lightness);
 }
 
@@ -149,26 +152,77 @@ $baseimg: 90%;
 
 }
 
+//Page 4
+$padding: 20px;
 
-//Pages 4
+
+@function typopadding ($size:large){
+  @if $size == large{
+    @return $padding - 10px;
+  }@else if $size == normal{
+    @return $padding;
+  }@else if $size == small{
+    @return $padding + 10px;
+  }
+}
+
+textarea{
+  resize: none;
+ 
+  width: typoimg('large');
+  color: lighten-or-darken(#265cc0, -20%);
+  padding: typopadding('large');
+}
+
+.form-registro{
+  @include shadow();
+  @include style-lts;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: typopadding('normal');
+  }
+  
+  input {
+    display: block;
+    width: typoimg('large');
+    padding: typopadding('small');
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 20px;
+    padding: 7px;
+
+  }
+}
+
+//Pages 5
+$i: 1;
+
+@while $i < 6 {
+	.width-#{$i} { width: 10em + $i; }
+	$i: $i + 1;
+}
 
 @mixin generar-entradas($cantidad) {
   @for $i from 1 through $cantidad {
     .libro-#{$i} {
       margin-bottom: 20px;
-      padding: 20px;
+      padding: typopadding('normal');
       
       label {
         display: block;
         font-weight: bold;
         margin-bottom: 5px;
-        padding: 20px;
+        padding: typopadding('normal');
       }
       
       input {
         display: block;
-        width: 100%;
-        padding: 20px;
+        width: typoimg('large');
+        padding: typopadding('normal');
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -200,6 +254,35 @@ $baseimg: 90%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 20px;
+
   }
 }
+
+main{
+  padding: typopadding('large');
+}
+.form-registro{
+  @include shadow();
+  @include style-lts;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: typopadding('normal');
+  }
+  
+  input {
+    display: block;
+    width: typoimg('large');
+    padding: typopadding('small');
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 20px;
+    padding: 7px;
+
+  }
+}
+
