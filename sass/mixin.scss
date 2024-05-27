@@ -84,12 +84,87 @@ div{
   
 }
 
-//Pages 3
+//page 3
+@function lighten-or-darken($color, $amount) {
+  // Convertir el color a HSL
+  $hue: hue($color);
+  $saturation: saturation($color);
+  $lightness: lightness($color);
+
+  // Ajustar el brillo del color
+  $new-lightness: $lightness + $amount;
+
+  // Asegurarse de que el nuevo brillo esté entre 0% y 100%
+  @if $new-lightness > 100% {
+    $new-lightness: 100%;
+  } @else if $new-lightness < 0% {
+    $new-lightness: 0%;
+  }
+
+  // Devolver el color ajustado en HSL
+  @return hsl($hue, $saturation, $new-lightness);
+}
+
+// Aplicar la función a las clases .lightened-color y .darkened-color
+.lightened-color {
+  color: lighten-or-darken(#7c1010, 20%);
+}
+
+.darkened-color {
+  color: lighten-or-darken(#7c1010, -20%);
+}
 
 
+//Pages 4
 
+@mixin generar-entradas($cantidad) {
+  @for $i from 1 through $cantidad {
+    .libro-#{$i} {
+      margin-bottom: 20px;
+      padding: 20px;
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        padding: 20px;
+      }
+      
+      input {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+}
 
+@include generar-entradas(5);
 
+.entradas-libros {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
+.libro {
+  margin-bottom: 20px;
+  padding: 20px;
   
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
   
+  input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
