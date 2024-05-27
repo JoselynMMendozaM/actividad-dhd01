@@ -85,6 +85,33 @@ div{
 }
 
 //page 3
+$basetypo: 20px;
+$baseimg: 90%;
+
+@function typoimg ($size:large){
+  @if $size == large{
+    @return $baseimg;
+  }
+  @if $size == normal{
+    @return $baseimg - 40%;
+  }
+  @if $size == small{
+    @return $baseimg - 65%;
+  }
+}
+
+@function typo ($size:normal){
+  @if $size == large{
+    @return $basetypo * 1.7;
+  }
+  @if $size == normal{
+    @return $basetypo;
+  }
+  @if $size == small{
+    @return $basetypo * 0.9;
+  }
+}
+
 @function lighten-or-darken($color, $amount) {
   // Convertir el color a HSL
   $hue: hue($color);
@@ -105,13 +132,21 @@ div{
   @return hsl($hue, $saturation, $new-lightness);
 }
 
-// Aplicar la función a las clases .lightened-color y .darkened-color
-.lightened-color {
-  color: lighten-or-darken(#7c1010, 20%);
-}
+#notice{
+  .title-1{
+    font-size: typo('large');
+  }
+  
+  p{
+    color: lighten-or-darken(#26c054, -20%);
+  }
 
-.darkened-color {
-  color: lighten-or-darken(#7c1010, -20%);
+  .img-1,
+  .img-2,
+  .img-3{
+   width: typoimg('large');
+  }
+
 }
 
 
