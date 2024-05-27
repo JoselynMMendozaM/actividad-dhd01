@@ -139,12 +139,16 @@ div {
   width: 80%;
 }
 
-.lightened-color {
-  color: hsl(0, 77.1428571429%, 47.4509803922%);
+#notice .title-1 {
+  font-size: 34px;
 }
-
-.darkened-color {
-  color: hsl(0, 77.1428571429%, 7.4509803922%);
+#notice p {
+  color: hsl(137.9220779221, 66.9565217391%, 25.0980392157%);
+}
+#notice .img-1,
+#notice .img-2,
+#notice .img-3 {
+  width: 90%;
 }
 
 .libro-1 {
