@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIRECTIVAS 2</title>
-    <link rel="stylesheet" href="./sass/style.css">
-    <script src="js/menu.js"></script>
-</head>
-<body>
-    <header>
-       
-    </header>
-    <nav>
-        <div class="menu-toggle">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-        </div>
-        <ul class="enlaces">
-            <li class="item"><a href="index.html">INICIO</a></li>
-            <li class="item"><a href="pg2.directivas.html"> DIRECTIVAS</a></li>
-            <li class="item"><a href="pg3-funciones.html">FUNCIONES</a></li>
-            <li class="item"><a href="pg4.condicionantes.html">CONDICIONANTES</a></li>
-            <li class="item"><a href="pg5-directivas2.html">DIRECTIVAS 2</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONDICIONANTES</title>
+        <link rel="stylesheet" href="./sass/style.css">
+        <link rel="stylesheet" href="./sass/mixin.css">
+        <script src="./js/formulario.js"></script>
+        <script src="js/menu.js"></script>
+    </head>
+    <body>
+        <header>
+           
+        </header>
+        <nav>
+            <div class="menu-toggle">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <ul class="enlaces">
+                <li class="item"><a href="index.html">INICIO</a></li>
+                <li class="item"><a href="pg2.directivas.html"> DIRECTIVAS</a></li>
+                <li class="item"><a href="pg3-funciones.html">FUNCIONES</a></li>
+                <li class="item"><a href="pg4.condicionantes.html">CONDICIONANTES</a></li>
+                <li class="item"><a href="pg5-directivas2.html">DIRECTIVAS 2</a></li>
+            </ul>
+        </nav>
     
-</body>
+        <main>
+            <form class="form-registro" >
+                <h1>Crea tu lista de libros</h1>
+                <hr>
+                <p>
+                    <label for="txt_name">Nombre(s):</label>
+                    <input type="text" id="txt_name" name="txt_name" placeholder="Ingrese su Nombre"  style="width: 320px";>
+                </p>
+    
+                <div class="contenedor-formulario">
+                    <label for="cantidadLibros">¿Cuántos libros deseas guardar? (máximo 10):</label>
+                    <input type="number" id="cantidadLibros" min="1" max="10">
+                
+                    <div id="entradasLibros"></div>
+                
+                    <button type="button" onclick="generarEntradas()">Generar entradas</button>
+                </div>
+                
+               
+                
+    
+            </form>
+        </main>
+        
+    </body>
 </html>
