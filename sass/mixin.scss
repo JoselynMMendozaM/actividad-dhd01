@@ -39,7 +39,7 @@ $i: 10px;
 	.width-#{$i} { width: 100px - $i; }
 	$i: $i + 1;
 }
-
+                                     
 //Page 1 y 2
 @mixin shadow{
   backdrop-filter: blur(20px);
@@ -286,3 +286,28 @@ main{
   }
 }
 
+$margin:10;
+
+@while $margin <= 100{
+  .box{
+    padding:10px;
+    margin: $margin;
+
+    .inner-box{
+      @include box;
+    }
+  }
+  $margin: $margin + 10px;
+}
+
+$colors: ();
+@each $colors in $colors{
+  .item{
+    background-color: $colors;
+    width: 10px;;
+    height: 20px;
+    text-align: center;
+    line-height:  50px;
+
+  }
+}
