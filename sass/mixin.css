@@ -196,24 +196,34 @@ textarea {
   padding: 7px;
 }
 
-.width-1 {
-  width: 11em;
+.libro:nth-child(odd) {
+  background-color: rgba(68, 119, 186, 0.3294117647);
+  border-radius: 40px;
 }
 
-.width-2 {
-  width: 12em;
+.libro:nth-child(odd) {
+  background-color: rgba(68, 119, 186, 0.3294117647);
+  border-radius: 40px;
 }
 
-.width-3 {
-  width: 13em;
+.libro:nth-child(odd) {
+  background-color: rgba(68, 119, 186, 0.3294117647);
+  border-radius: 40px;
 }
 
-.width-4 {
-  width: 14em;
+.libro:nth-child(odd) {
+  background-color: rgba(68, 119, 186, 0.3294117647);
+  border-radius: 40px;
 }
 
-.width-5 {
-  width: 15em;
+.libro:nth-child(odd) {
+  background-color: rgba(68, 119, 186, 0.3294117647);
+  border-radius: 40px;
+}
+
+.libro:nth-child(even) {
+  background-color: rgba(8, 66, 17, 0.2784313725);
+  border-radius: 40px;
 }
 
 .libro-1 {
@@ -374,6 +384,4 @@ main {
   border-radius: 4px;
   border-radius: 20px;
   padding: 7px;
-}
-
-@whi;/*# sourceMappingURL=mixin.css.map */
+}/*# sourceMappingURL=mixin.css.map */
