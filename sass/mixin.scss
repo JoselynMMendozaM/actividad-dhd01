@@ -199,11 +199,26 @@ textarea{
 }
 
 //Pages 5
+$libro-colors: (
+  '#f0f8ff', // Light blue
+  '#fff5f3', // Light pink
+  '#fafad2', // Light yellow
+  '#dcedfe', // Light purple
+  '#e8f0fe'  // Light lavender
+);
+
 $i: 1;
 
-@while $i < 6 {
-	.width-#{$i} { width: 10em + $i; }
-	$i: $i + 1;
+@each $color in $libro-colors {
+  .libro:nth-child(odd) {
+    background-color: #4477ba54;
+    border-radius: 40px;
+  }
+}
+
+.libro:nth-child(even) {
+  background-color: #08421147; 
+  border-radius: 40px;
 }
 
 @mixin generar-entradas($cantidad) {
@@ -288,17 +303,7 @@ main{
 
 $margin:10;
 
-@while $margin <= 100{
-  .box{
-    padding:10px;
-    margin: $margin;
 
-    .inner-box{
-      @include box;
-    }
-  }
-  $margin: $margin + 10px;
-}
 
 $colors: ();
 @each $colors in $colors{
